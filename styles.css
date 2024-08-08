@@ -14,8 +14,9 @@ body, html {
 img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	display: none;
+	object-position: top;
 }
 
 /* Display the large image by default */
@@ -27,10 +28,11 @@ img {
 @media (max-width: 640px) {
 	/* Hide the large image and show the small image */
 	.large-img {
-			display: none;
+		display: none;
 	}
 
 	.small-img {
 			display: block;
+			object-fit: cover;
 	}
 }

@@ -1,0 +1,36 @@
+/* Basic styles */
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.image-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: none;
+}
+
+/* Display the large image by default */
+.large-img {
+	display: block;
+}
+
+/* Media query for screens smaller than 640px */
+@media (max-width: 640px) {
+	/* Hide the large image and show the small image */
+	.large-img {
+			display: none;
+	}
+
+	.small-img {
+			display: block;
+	}
+}
